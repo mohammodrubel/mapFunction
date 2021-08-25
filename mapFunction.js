@@ -56,3 +56,30 @@ console.log(amountValue)
 const shoesAmount = products.map(product => product.mobile)
 console.log(shoesAmount)
 products.map(product => console.log(product))
+
+
+
+const friends =['rubel','ashik','robin','shihab','nahid','sayem','mohammod Rubel','fardin Tazbeed']
+const numbers = [1,2,3,4,5,6,7,8,90,12,34,56,78,88,888,890,987,654,321]
+const langthOfFriends = friends.map(friend => friend.length)
+// console.log(langthOfFriends)
+
+const numberofMyFriends = numbers.map(number => number *5)
+// console.log(numberofMyFriends)
+
+const studentInfo =  [
+    {name:'fardin',class:'LLB',rollNumber:'8765',mobileNumber:'01907626345',yearOfStudent:'2020',amount:'201357'},
+    {name:'rubel',class:'BSC',rollNumber:'4857',mobileNumber:'01907626232',yearOfStudent:'2021',amount:'202468'},
+    {name:'nahid',class:'MSC',rollNumber:'8476',mobileNumber:'01907626222',yearOfStudent:'2022',amount:'201234'},
+    {name:'shihab',class:'MBA',rollNumber:'8988',mobileNumber:'01907626345',yearOfStudent:'2021',amount:'209876'},
+    {name:'ershad',class:'BBA',rollNumber:'4759',mobileNumber:'01907626234',yearOfStudent:'2020',amount:'207890'},
+]
+const information = studentInfo.map(student => student.mobileNumber)
+const information2 = studentInfo.map(student => student.rollNumber)
+const information3 = studentInfo.map(student => student.class)
+const information4 = studentInfo.map(student => student.amount)
+const information5 = studentInfo.map(student => student.name)
+const infornation6 = studentInfo.map(student => student.yearOfStudent)
+const informationx = studentInfo.forEach(student =>student.class)
+
+console.log(information,information2,information3,information4,information5,infornation6)
